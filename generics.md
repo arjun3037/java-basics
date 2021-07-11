@@ -1,5 +1,5 @@
 Generics - 
-Type Erasure - To implements generics,the Java compiler applies type erasure.
+Type Erasure - To implements generics, java compiler applies type erasure.
 
 1) Replace all type parameter in generic types with their bounds or object if the type
     parameter are unbounded
@@ -7,6 +7,5 @@ Type Erasure - To implements generics,the Java compiler applies type erasure.
 
 Heap Pollution - 
 
-Heap pollution occur when a variable of a parametrized type refers to an object that is not of
-that parametrized type.
+Heap pollution occur when a variable of a parametrized type refers to an object that is not of that parametrized type.
 
