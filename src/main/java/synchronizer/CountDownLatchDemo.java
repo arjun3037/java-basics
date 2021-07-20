@@ -2,6 +2,8 @@ package synchronizer;
 
 import java.util.concurrent.CountDownLatch;
 
+// CountDownLatch is used to syncronization of tasks. Suppose i wants to process some task untill by all dependent task finished so i can use
+// countDownLath in this case. for every task
 public class CountDownLatchDemo {
 
     public static void main(String[] args) throws InterruptedException {
@@ -12,7 +14,6 @@ public class CountDownLatchDemo {
         new Thread(new Task(countDownLatch),"ThreadName-3").start();
         countDownLatch.await();
         System.out.println("Service is already running");
-
 
     }
 
